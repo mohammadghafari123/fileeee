@@ -1,78 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginForm</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="title">
-            <h2>MAC KEYBOARD</h2>
+        <div class="sign-up-page">
+            <span class="sign-up-text" onclick="document.getElementById('login-text').classList.remove('active')">Sign up</span>
+            <div class="input-container">
+                <input type="text" placeholder="User name" class="username-input">
+                <input type="email" placeholder="Email" class="input-email">
+                <input type="password" placeholder="Password" class="password-email">
+                <button class="sign-up-button">Sign up</button>
+            </div>
         </div>
-        <div class="keyboard-container">
-            <div class="keyboard-row">
-                <button class="normal small-finger">`</button>
-                <button class="normal small-finger">1</button>
-                <button class="normal ring-finger">2</button>
-                <button class="normal f-finger">3</button>
-                <button class="normal point-finger">4</button>
-                <button class="normal middle">5</button>
-                <button class="normal middle">6</button>
-                <button class="normal point-finger">7</button>
-                <button class="normal f-finger">8</button>
-                <button class="normal ring-finger">9</button>
-                <button class="normal small-finger">0</button>
-                <button class="normal small-finger">-</button>
-                <button class="normal small-finger">=</button>
-                <button class="normal small-finger delete-tab-key">delete</button>
-            </div>
-            <div class="keyboard-row">
-                <button class="normal small-finger delete-tab-key">tab</button>
-                <button class="normal small-finger">Q</button>
-                <button class="normal ring-finger">W</button>
-                <button class="normal f-finger">E</button>
-                <button class="normal point-finger">R</button>
-                <button class="normal middle">T</button>
-                <button class="normal middle">Y</button>
-                <button class="normal point-finger">U</button>
-                <button class="normal f-finger">I</button>
-                <button class="normal ring-finger">O</button>
-                <button class="normal small-finger">P</button>
-                <button class="normal small-finger">[</button>
-                <button class="normal small-finger">]</button>
-                <button class="normal small-finger">\</button>
-            </div>
-            <div class="keyboard-row">
-                <button class="normal small-finger capsLock-return-key">caps lock</button>
-                <button class="normal small-finger">A</button>
-                <button class="normal ring-finger">S</button>
-                <button class="normal f-finger">D</button>
-                <button class="normal point-finger">F</button>
-                <button class="normal middle">G</button>
-                <button class="normal middle">H</button>
-                <button class="normal point-finger">J</button>
-                <button class="normal f-finger">K</button>
-                <button class="normal ring-finger">L</button>
-                <button class="normal small-finger">;</button>
-                <button class="normal small-finger">'</button>
-                <button class="normal small-finger capsLock-return-key">Return</button>
-            </div>
-            <div class="keyboard-row">
-                <button class="normal small-finger shift-key">shift</button>
-                <button class="normal small-finger">Z</button>
-                <button class="normal ring-finger">X</button>
-                <button class="normal f-finger">C</button>
-                <button class="normal point-finger">V</button>
-                <button class="normal middle">B</button>
-                <button class="normal middle">N</button>
-                <button class="normal point-finger">M</button>
-                <button class="normal f-finger">,</button>
-                <button class="normal ring-finger">.</button>
-                <button class="normal small-finger">/</button>
-                <button class="normal small-finger shift-key">shift</button>
+        <div class="login-page" id="login-page">
+            <span class="login-text" id="login-text" onclick="document.getElementById('login-text').classList.add('active')">Login</span>
+            <div class="input-container">
+                <input type="email" placeholder="Email" class="input-email">
+                <input type="password" placeholder="Password" class="password-email">
+                <button class="login-button">login</button>
             </div>
         </div>
     </div>
